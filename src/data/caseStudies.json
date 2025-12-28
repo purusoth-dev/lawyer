@@ -1,0 +1,95 @@
+{
+  "caseStudies": [
+    {
+      "id": "landmark-property-dispute",
+      "title": "Landmark Property Dispute Resolution",
+      "category": "Property Law",
+      "client": "Family Trust",
+      "duration": "18 months",
+      "outcome": "Favorable Judgment",
+      "image": "/images/cases/property-case.jpg",
+      "summary": "Successfully resolved a complex multi-party property dispute involving ancestral land worth ₹50 Crores in Chennai.",
+      "challenge": "Our client faced competing claims from multiple parties over a prime commercial property. The case involved disputed will documents, alleged fraud, and years of illegal possession by third parties.",
+      "approach": "We conducted thorough title investigation, gathered historical records from Sub-Registrar offices, and presented irrefutable documentary evidence. Our team also initiated parallel proceedings to address fraudulent transactions.",
+      "result": "The High Court ruled in favor of our client, establishing clear title and ordering eviction of illegal occupants. The judgment has become a reference for similar property disputes in Tamil Nadu.",
+      "testimonial": "The dedication shown by Sharma & Associates was extraordinary. They left no stone unturned.",
+      "featured": true
+    },
+    {
+      "id": "corporate-merger-advisory",
+      "title": "₹200 Crore Corporate Merger",
+      "category": "Corporate Law",
+      "client": "Leading Manufacturing Company",
+      "duration": "12 months",
+      "outcome": "Successful Merger",
+      "image": "/images/cases/corporate-case.jpg",
+      "summary": "Advised and executed a complex merger between two manufacturing giants, navigating regulatory approvals and stakeholder interests.",
+      "challenge": "The merger involved significant regulatory hurdles, employee union concerns, and complex tax implications. Both companies had operations across multiple states with varying compliance requirements.",
+      "approach": "Our team structured the deal to optimize tax efficiency while ensuring regulatory compliance. We negotiated with employee unions and obtained all necessary approvals from CCI and other authorities.",
+      "result": "The merger was completed smoothly, creating synergies worth ₹30 Crores annually. All employees were retained, and the combined entity achieved significant market position.",
+      "testimonial": "Their corporate expertise made a complex transaction feel seamless. Exceptional work!",
+      "featured": true
+    },
+    {
+      "id": "criminal-acquittal",
+      "title": "High-Profile Criminal Acquittal",
+      "category": "Criminal Law",
+      "client": "Business Executive",
+      "duration": "24 months",
+      "outcome": "Full Acquittal",
+      "image": "/images/cases/criminal-case.jpg",
+      "summary": "Secured complete acquittal for a senior business executive falsely accused in a fraud case involving allegations of ₹15 Crores.",
+      "challenge": "Our client was arrested based on circumstantial evidence and false testimony. The case received significant media attention, affecting both personal reputation and business operations.",
+      "approach": "We methodically dismantled the prosecution's case by exposing inconsistencies in witness statements and presenting forensic evidence of our client's innocence. We also filed defamation suits against false accusers.",
+      "result": "The court acquitted our client of all charges, noting the prosecution's failure to prove guilt beyond reasonable doubt. Our client's reputation was restored, and business operations resumed normally.",
+      "testimonial": "They believed in my innocence when no one else did. My family owes them everything.",
+      "featured": true
+    },
+    {
+      "id": "cyber-crime-recovery",
+      "title": "Cyber Crime Investigation & Recovery",
+      "category": "Cyber Crime",
+      "client": "E-commerce Startup",
+      "duration": "6 months",
+      "outcome": "Full Recovery + Conviction",
+      "image": "/images/cases/cyber-case.jpg",
+      "summary": "Traced and recovered ₹85 Lakhs stolen through sophisticated phishing attacks, leading to conviction of the perpetrators.",
+      "challenge": "A well-organized cybercrime ring had infiltrated our client's payment systems, siphoning funds through multiple layers of shell accounts. Traditional investigation methods had failed.",
+      "approach": "We coordinated with cyber cells, engaged digital forensic experts, and traced the money trail across multiple banks. Our legal team secured freezing orders and initiated prosecution under the IT Act.",
+      "result": "All stolen funds were recovered, and three perpetrators were convicted. The case set a precedent for cybercrime prosecution in Tamil Nadu.",
+      "testimonial": "Their tech-savvy approach to legal issues is what every modern business needs.",
+      "featured": false
+    },
+    {
+      "id": "consumer-class-action",
+      "title": "Consumer Class Action Victory",
+      "category": "Consumer Protection",
+      "client": "400+ Home Buyers",
+      "duration": "30 months",
+      "outcome": "Compensation Awarded",
+      "image": "/images/cases/consumer-case.jpg",
+      "summary": "Led a class action representing 400+ home buyers against a defaulting real estate developer, securing ₹120 Crores in compensation.",
+      "challenge": "The developer had collected advances for a housing project but failed to deliver possession for over 5 years. Individual buyers lacked resources to fight the builder's legal team.",
+      "approach": "We organized affected buyers, filed a consolidated case before RERA and Consumer Forum, and obtained interim orders preventing asset disposal. We also initiated criminal proceedings against the developer.",
+      "result": "The National Consumer Disputes Redressal Commission ordered full refund with 12% interest to all buyers. The developer's directors were also held personally liable.",
+      "testimonial": "They gave us hope when we had lost everything. This was justice served.",
+      "featured": false
+    },
+    {
+      "id": "gst-dispute-resolution",
+      "title": "Major GST Dispute Resolution",
+      "category": "GST & Taxation",
+      "client": "Textile Manufacturer",
+      "duration": "8 months",
+      "outcome": "Demand Quashed",
+      "image": "/images/cases/tax-case.jpg",
+      "summary": "Successfully challenged and quashed a ₹4.5 Crore GST demand notice based on erroneous classification by tax authorities.",
+      "challenge": "The GST department had incorrectly classified our client's products under a higher tax bracket and issued a retrospective demand. This threatened the viability of the business.",
+      "approach": "Our team conducted detailed analysis of HSN codes, prepared comprehensive technical submissions, and obtained favorable rulings from the Advance Ruling Authority. We simultaneously appealed the demand order.",
+      "result": "The Appellate Authority quashed the entire demand, confirming the correct classification. The judgment provided clarity for the entire textile industry on similar products.",
+      "testimonial": "Their tax expertise saved our business. We recommend them without hesitation.",
+      "featured": false
+    }
+  ]
+}
+

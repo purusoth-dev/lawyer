@@ -1,0 +1,59 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Rajesh Kumar",
+      "location": "Chennai",
+      "rating": 5,
+      "text": "Mr. Sharma and his team handled my property dispute case with exceptional professionalism. After 3 years of struggle, they secured a favorable judgment within 8 months. Highly recommend their services.",
+      "caseType": "Property Dispute",
+      "image": "/images/testimonials/client-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Priya Venkatesh",
+      "location": "Coimbatore",
+      "rating": 5,
+      "text": "Ms. Kavitha was incredibly supportive during my divorce proceedings. She handled everything with sensitivity and ensured my rights were protected. The outcome was better than I expected.",
+      "caseType": "Divorce & Maintenance",
+      "image": "/images/testimonials/client-2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Suresh Babu",
+      "location": "Madurai",
+      "rating": 5,
+      "text": "The corporate legal advice from Mr. Arjun has been invaluable for our growing business. Their contract drafting and compliance support saved us from potential legal issues. True professionals!",
+      "caseType": "Corporate Law",
+      "image": "/images/testimonials/client-3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Lakshmi Narayanan",
+      "location": "Trichy",
+      "rating": 5,
+      "text": "I was falsely accused in a criminal case and felt helpless. Sharma & Associates fought vigorously and got me acquitted. They gave me my life back. Forever grateful.",
+      "caseType": "Criminal Law",
+      "image": "/images/testimonials/client-4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Mohammed Ismail",
+      "location": "Chennai",
+      "rating": 5,
+      "text": "Their expertise in cheque bounce cases is unmatched. They recovered my money efficiently and kept me informed throughout the process. Professional and result-oriented.",
+      "caseType": "Cheque Bounce",
+      "image": "/images/testimonials/client-5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Anitha Subramanian",
+      "location": "Salem",
+      "rating": 5,
+      "text": "The consumer protection case against a major e-commerce company seemed daunting, but the team made it simple. Won compensation beyond expectations. Excellent legal service!",
+      "caseType": "Consumer Protection",
+      "image": "/images/testimonials/client-6.jpg"
+    }
+  ]
+}
+

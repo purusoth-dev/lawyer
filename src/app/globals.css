@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-body text-neutral-800 antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+  
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-accent-600 text-white font-medium rounded-md hover:bg-accent-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-primary-800 text-white font-medium rounded-md hover:bg-primary-900 transition-all duration-300;
+  }
+  
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 border-2 border-accent-500 text-accent-600 font-medium rounded-md hover:bg-accent-500 hover:text-white transition-all duration-300;
+  }
+  
+  .btn-white {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-white text-primary-800 font-medium rounded-md hover:bg-neutral-100 transition-all duration-300 shadow-lg;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary-900;
+  }
+  
+  .section-subtitle {
+    @apply text-lg md:text-xl text-neutral-600 max-w-2xl;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300;
+  }
+  
+  .card-elevated {
+    @apply bg-white rounded-xl shadow-xl border border-neutral-100;
+  }
+  
+  .gold-gradient {
+    @apply bg-gradient-to-r from-accent-500 via-accent-400 to-accent-500;
+  }
+  
+  .navy-gradient {
+    @apply bg-gradient-to-br from-primary-900 via-primary-800 to-primary-950;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-500 to-accent-600;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-accent-500 outline-none transition-all duration-200;
+  }
+  
+  .input-error {
+    @apply border-red-500 focus:ring-red-500 focus:border-red-500;
+  }
+  
+  .error-message {
+    @apply text-red-500 text-sm mt-1;
+  }
+  
+  /* Decorative elements */
+  .gold-line {
+    @apply w-16 h-1 bg-accent-500 rounded-full;
+  }
+  
+  .gold-line-center {
+    @apply w-16 h-1 bg-accent-500 rounded-full mx-auto;
+  }
+}
+
+@layer utilities {
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a365d;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0d1f3c;
+}
+
+/* MDX Blog Styles */
+.prose-legal {
+  @apply max-w-none text-lg leading-relaxed;
+}
+
+.prose-legal h1 {
+  @apply font-heading text-4xl font-bold text-primary-900 mb-6 mt-8;
+}
+
+.prose-legal h2 {
+  @apply font-heading text-3xl font-bold text-primary-800 border-b border-neutral-200 pb-2 mb-4 mt-8;
+}
+
+.prose-legal h3 {
+  @apply font-heading text-2xl font-semibold text-primary-700 mb-3 mt-6;
+}
+
+.prose-legal h4 {
+  @apply font-heading text-xl font-semibold text-primary-700 mb-2 mt-4;
+}
+
+.prose-legal p {
+  @apply text-neutral-700 mb-4 leading-relaxed;
+}
+
+.prose-legal a {
+  @apply text-accent-600 hover:text-accent-700 underline;
+}
+
+.prose-legal ul {
+  @apply list-disc list-inside mb-4 space-y-2 text-neutral-700;
+}
+
+.prose-legal ol {
+  @apply list-decimal list-inside mb-4 space-y-2 text-neutral-700;
+}
+
+.prose-legal li {
+  @apply leading-relaxed;
+}
+
+.prose-legal blockquote {
+  @apply border-l-4 border-accent-500 bg-neutral-50 pl-4 py-3 my-4 italic text-neutral-700;
+}
+
+.prose-legal code {
+  @apply bg-neutral-100 text-primary-800 px-1.5 py-0.5 rounded text-sm font-mono;
+}
+
+.prose-legal pre {
+  @apply bg-primary-950 text-neutral-100 p-4 rounded-lg overflow-x-auto my-4 text-sm;
+}
+
+.prose-legal table {
+  @apply min-w-full divide-y divide-neutral-200 border border-neutral-200 rounded-lg my-4;
+}
+
+.prose-legal th {
+  @apply px-4 py-3 bg-neutral-50 text-left text-sm font-semibold text-primary-900;
+}
+
+.prose-legal td {
+  @apply px-4 py-3 text-sm text-neutral-700 border-t border-neutral-200;
+}
+
+.prose-legal hr {
+  @apply my-8 border-neutral-200;
+}
+
+.prose-legal strong {
+  @apply font-semibold text-primary-900;
+}
+
+/* Swiper customization */
+.swiper-pagination-bullet {
+  @apply bg-accent-500 !important;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-accent-600 !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @apply text-accent-500 !important;
+}
+

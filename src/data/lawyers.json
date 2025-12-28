@@ -1,0 +1,68 @@
+{
+  "lawyers": [
+    {
+      "id": "r-sharma",
+      "name": "Mr. R. Sharma",
+      "designation": "Senior Advocate",
+      "experience": "25+ Years",
+      "image": "/images/lawyers/sharma.jpg",
+      "specializations": ["Criminal Law", "Constitutional Law", "Property Disputes"],
+      "education": [
+        "LL.B., Madras Law College",
+        "LL.M., University of Madras"
+      ],
+      "achievements": [
+        "Enrolled with Bar Council of Tamil Nadu in 1999",
+        "Successfully argued over 500+ cases in High Court",
+        "Former Additional Public Prosecutor",
+        "Regular speaker at legal seminars"
+      ],
+      "bio": "Mr. R. Sharma is the founding partner of Sharma & Associates with over 25 years of distinguished legal practice. Known for his sharp legal acumen and persuasive courtroom presence, he has successfully handled landmark cases in criminal and constitutional law. His dedication to justice and client-centric approach has earned him recognition across Tamil Nadu's legal community.",
+      "languages": ["English", "Tamil", "Hindi"],
+      "email": "rsharma@sharmaassociates.in"
+    },
+    {
+      "id": "s-kavitha",
+      "name": "Ms. S. Kavitha",
+      "designation": "Family Law Specialist",
+      "experience": "12 Years",
+      "image": "/images/lawyers/kavitha.jpg",
+      "specializations": ["Family Law", "Divorce & Maintenance", "Child Custody"],
+      "education": [
+        "B.A., LL.B. (Hons), Tamil Nadu Dr. Ambedkar Law University",
+        "Diploma in Family Law & Mediation"
+      ],
+      "achievements": [
+        "Successfully mediated 200+ family disputes",
+        "Member, Tamil Nadu State Legal Services Authority Panel",
+        "Certified Family Mediator",
+        "Published author on matrimonial law"
+      ],
+      "bio": "Ms. S. Kavitha brings a compassionate yet strategic approach to family law matters. With 12 years of focused experience in matrimonial disputes, child custody, and domestic relations, she is known for achieving favorable outcomes while maintaining the dignity of all parties involved. Her expertise in mediation has helped numerous families find amicable resolutions.",
+      "languages": ["English", "Tamil"],
+      "email": "skavitha@sharmaassociates.in"
+    },
+    {
+      "id": "v-arjun",
+      "name": "Mr. V. Arjun",
+      "designation": "Corporate Lawyer",
+      "experience": "10 Years",
+      "image": "/images/lawyers/arjun.jpg",
+      "specializations": ["Corporate Law", "GST & Taxation", "Contract Law"],
+      "education": [
+        "B.A., LL.B. (Hons), National Law School, Bangalore",
+        "LL.M. in Corporate Law, Queen Mary University of London"
+      ],
+      "achievements": [
+        "Advised on transactions worth ₹500+ Crores",
+        "Former Legal Counsel at Fortune 500 company",
+        "Expert in M&A and Due Diligence",
+        "GST Certified Professional"
+      ],
+      "bio": "Mr. V. Arjun is our corporate law expert with a decade of experience advising businesses ranging from startups to multinational corporations. His international education and corporate background provide clients with sophisticated legal strategies. He specializes in complex commercial transactions, regulatory compliance, and tax optimization.",
+      "languages": ["English", "Tamil", "Hindi"],
+      "email": "varjun@sharmaassociates.in"
+    }
+  ]
+}
+

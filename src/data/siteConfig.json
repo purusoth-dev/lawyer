@@ -1,0 +1,70 @@
+{
+  "siteName": "Sharma & Associates",
+  "tagline": "Trusted Legal Expertise Across India",
+  "description": "Sharma & Associates is a leading law firm in Chennai, India, offering comprehensive legal services including criminal law, family law, corporate law, property disputes, and more. Our experienced advocates provide trusted legal representation across Tamil Nadu.",
+  "url": "https://sharmaassociates.in",
+  "contact": {
+    "email": "contact@sharmaassociates.in",
+    "phone": "+91 98765 43210",
+    "phoneDisplay": "+91 98765 43210",
+    "address": {
+      "line1": "123, Anna Salai",
+      "line2": "Opposite High Court",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600002",
+      "country": "India"
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.5464800247826!2d80.2514!3d13.0827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDA0JzU3LjciTiA4MMKwMTUnMDUuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+  },
+  "hours": {
+    "weekdays": "Monday – Saturday",
+    "time": "9:00 AM – 7:00 PM",
+    "sunday": "Closed (Emergency calls accepted)"
+  },
+  "languages": ["English", "Tamil"],
+  "social": {
+    "linkedin": "https://linkedin.com/company/sharma-associates",
+    "twitter": "https://twitter.com/sharmaassoc",
+    "facebook": "https://facebook.com/sharmaassociates"
+  },
+  "stats": {
+    "yearsExperience": "25+",
+    "casesWon": "2000+",
+    "happyClients": "5000+",
+    "successRate": "95%"
+  },
+  "whyChooseUs": [
+    {
+      "title": "Experienced Advocates",
+      "description": "Our team brings over 25 years of combined legal experience across diverse practice areas.",
+      "icon": "Award"
+    },
+    {
+      "title": "Client-Centric Approach",
+      "description": "We prioritize your interests and maintain transparent communication throughout your case.",
+      "icon": "Users"
+    },
+    {
+      "title": "Proven Track Record",
+      "description": "With a 95% success rate and 2000+ cases won, our results speak for themselves.",
+      "icon": "TrendingUp"
+    },
+    {
+      "title": "Affordable Fees",
+      "description": "Quality legal services at competitive rates with flexible payment options available.",
+      "icon": "IndianRupee"
+    },
+    {
+      "title": "Pan-India Practice",
+      "description": "We handle cases across all courts in India, from District Courts to the Supreme Court.",
+      "icon": "MapPin"
+    },
+    {
+      "title": "Quick Response",
+      "description": "We understand legal emergencies. Get expert advice within 24 hours of consultation.",
+      "icon": "Clock"
+    }
+  ]
+}
+
