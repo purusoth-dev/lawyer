@@ -275,7 +275,7 @@ Mr. V. Arjun and team provide:
 export async function generateStaticParams() {
   const slugs = getAllBlogSlugs();
   const sampleSlugs = Object.keys(samplePosts);
-  const allSlugs = [...new Set([...slugs, ...sampleSlugs])];
+  const allSlugs = Array.from(new Set([...slugs, ...sampleSlugs]));
   return allSlugs.map((slug) => ({ slug }));
 }
 
