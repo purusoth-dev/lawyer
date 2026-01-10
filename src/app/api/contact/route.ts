@@ -2,54 +2,6 @@ import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 import { contactFormSchema } from '@/lib/validations';
 
-// Function to send WhatsApp notification
-async function sendWhatsAppNotification(data: {
-  name: string;
-  email: string;
-  phone: string;
-  caseType: string;
-  message: string;
-}) {
-  const whatsappNumber = process.env.WHATSAPP_NUMBER;
-  const whatsappApiKey = process.env.WHATSAPP_API_KEY;
-
-  if (!whatsappNumber || !whatsappApiKey) {
-    console.log('WhatsApp notification not configured');
-    return;
-  }
-
-  const notificationMessage = `
-🔔 *New Client Inquiry*
-
-👤 *Name:* ${data.name}
-📧 *Email:* ${data.email}
-📱 *Phone:* ${data.phone}
-📋 *Case Type:* ${data.caseType}
-
-💬 *Message:*
-${data.message}
-
-⏰ *Submitted:* ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}
-  `.trim();
-
-  try {
-    // Using CallMeBot API (free service)
-    // To set up: Send "I allow callmebot to send me messages" to +34 644 71 99 43 on WhatsApp
-    const encodedMessage = encodeURIComponent(notificationMessage);
-    const url = `https://api.callmebot.com/whatsapp.php?phone=${whatsappNumber}&text=${encodedMessage}&apikey=${whatsappApiKey}`;
-
-    const response = await fetch(url);
-
-    if (response.ok) {
-      console.log('WhatsApp notification sent successfully');
-    } else {
-      console.error('Failed to send WhatsApp notification:', await response.text());
-    }
-  } catch (error) {
-    console.error('WhatsApp notification error:', error);
-  }
-}
-
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
@@ -65,9 +17,6 @@ export async function POST(request: NextRequest) {
     }
 
     const { name, email, phone, caseType, message } = validationResult.data;
-
-    // Send WhatsApp notification (runs in background)
-    sendWhatsAppNotification({ name, email, phone, caseType, message });
 
     // Create email transporter
     // In production, use actual SMTP credentials from environment variables

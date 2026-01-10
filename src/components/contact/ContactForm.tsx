@@ -3,9 +3,13 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
+import { Send, CheckCircle, AlertCircle, Loader2, MessageCircle } from 'lucide-react';
 import { contactFormSchema, type ContactFormData } from '@/lib/validations';
 import practiceAreasData from '@/data/practiceAreas.json';
+import siteConfig from '@/data/siteConfig.json';
+
+// WhatsApp number without + symbol
+const WHATSAPP_NUMBER = siteConfig.contact.phone.replace(/[^0-9]/g, '');
 
 export default function ContactForm() {
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
@@ -19,6 +23,21 @@ export default function ContactForm() {
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
   });
+
+  const openWhatsApp = (data: ContactFormData) => {
+    const message = `*New Client Inquiry*
+
+*Name:* ${data.name}
+*Email:* ${data.email}
+*Phone:* ${data.phone}
+*Case Type:* ${data.caseType}
+
+*Message:*
+${data.message}`.trim();
+
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
 
   const onSubmit = async (data: ContactFormData) => {
     setSubmitStatus('loading');
@@ -40,6 +59,10 @@ export default function ContactForm() {
       }
 
       setSubmitStatus('success');
+      
+      // Open WhatsApp with the form data
+      openWhatsApp(data);
+      
       reset();
 
       // Reset success message after 5 seconds
