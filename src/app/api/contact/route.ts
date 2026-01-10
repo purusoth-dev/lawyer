@@ -2,6 +2,54 @@ import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 import { contactFormSchema } from '@/lib/validations';
 
+// Function to send WhatsApp notification
+async function sendWhatsAppNotification(data: {
+  name: string;
+  email: string;
+  phone: string;
+  caseType: string;
+  message: string;
+}) {
+  const whatsappNumber = process.env.WHATSAPP_NUMBER;
+  const whatsappApiKey = process.env.WHATSAPP_API_KEY;
+
+  if (!whatsappNumber || !whatsappApiKey) {
+    console.log('WhatsApp notification not configured');
+    return;
+  }
+
+  const notificationMessage = `
+🔔 *New Client Inquiry*
+
+👤 *Name:* ${data.name}
+📧 *Email:* ${data.email}
+📱 *Phone:* ${data.phone}
+📋 *Case Type:* ${data.caseType}
+
+💬 *Message:*
+${data.message}
+
+⏰ *Submitted:* ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}
+  `.trim();
+
+  try {
+    // Using CallMeBot API (free service)
+    // To set up: Send "I allow callmebot to send me messages" to +34 644 71 99 43 on WhatsApp
+    const encodedMessage = encodeURIComponent(notificationMessage);
+    const url = `https://api.callmebot.com/whatsapp.php?phone=${whatsappNumber}&text=${encodedMessage}&apikey=${whatsappApiKey}`;
+
+    const response = await fetch(url);
+
+    if (response.ok) {
+      console.log('WhatsApp notification sent successfully');
+    } else {
+      console.error('Failed to send WhatsApp notification:', await response.text());
+    }
+  } catch (error) {
+    console.error('WhatsApp notification error:', error);
+  }
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
@@ -17,6 +65,9 @@ export async function POST(request: NextRequest) {
     }
 
     const { name, email, phone, caseType, message } = validationResult.data;
+
+    // Send WhatsApp notification (runs in background)
+    sendWhatsAppNotification({ name, email, phone, caseType, message });
 
     // Create email transporter
     // In production, use actual SMTP credentials from environment variables
@@ -45,7 +96,7 @@ export async function POST(request: NextRequest) {
 
     // Email content for the client
     const clientEmailContent = `
-      <h2>Thank you for contacting Sharma & Associates</h2>
+      <h2>Thank you for contacting SKS Law Associates</h2>
       <p>Dear ${name},</p>
       <p>We have received your inquiry and will get back to you within 24 hours.</p>
       <p><strong>Your submission details:</strong></p>
@@ -53,10 +104,10 @@ export async function POST(request: NextRequest) {
         <li><strong>Case Type:</strong> ${caseType}</li>
         <li><strong>Message:</strong> ${message.substring(0, 100)}${message.length > 100 ? '...' : ''}</li>
       </ul>
-      <p>If your matter is urgent, please call us directly at <strong>+91 98765 43210</strong>.</p>
+      <p>If your matter is urgent, please call us directly at <strong>+91 86829 46765</strong>.</p>
       <br>
       <p>Best regards,</p>
-      <p><strong>Sharma & Associates</strong><br>
+      <p><strong>SKS Law Associates</strong><br>
       Advocates & Legal Consultants<br>
       Chennai, Tamil Nadu</p>
     `;
@@ -79,8 +130,8 @@ export async function POST(request: NextRequest) {
 
     // Send email to the firm
     await transporter.sendMail({
-      from: process.env.SMTP_FROM || 'noreply@sharmaassociates.in',
-      to: process.env.CONTACT_EMAIL || 'contact@sharmaassociates.in',
+      from: process.env.SMTP_FROM || 'noreply@skslawassociates.in',
+      to: process.env.CONTACT_EMAIL || 'sk.saravanan@yahoo.com',
       subject: `New Inquiry: ${caseType} - ${name}`,
       html: firmEmailContent,
       replyTo: email,
@@ -88,9 +139,9 @@ export async function POST(request: NextRequest) {
 
     // Send confirmation email to the client
     await transporter.sendMail({
-      from: process.env.SMTP_FROM || 'noreply@sharmaassociates.in',
+      from: process.env.SMTP_FROM || 'noreply@skslawassociates.in',
       to: email,
-      subject: 'Thank you for contacting Sharma & Associates',
+      subject: 'Thank you for contacting SKS Law Associates',
       html: clientEmailContent,
     });
 
@@ -106,4 +157,3 @@ export async function POST(request: NextRequest) {
     );
   }
 }
-

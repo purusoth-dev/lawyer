@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import { Metadata } from "next";
 import {
   Phone,
   Mail,
@@ -6,22 +6,21 @@ import {
   Clock,
   MessageCircle,
   CheckCircle,
-} from 'lucide-react';
-import PageHeader from '@/components/ui/PageHeader';
-import ContactForm from '@/components/contact/ContactForm';
-import siteConfig from '@/data/siteConfig.json';
+} from "lucide-react";
+import PageHeader from "@/components/ui/PageHeader";
+import ContactForm from "@/components/contact/ContactForm";
+import siteConfig from "@/data/siteConfig.json";
 
 export const metadata: Metadata = {
-  title: 'Contact Us',
+  title: "Contact Us",
   description:
-    'Get in touch with Sharma & Associates for legal consultation. Book a free consultation with our experienced advocates in Chennai. Call +91 98765 43210.',
+    "Get in touch with SKS Law Associates for legal consultation. Book a consultation with our experienced advocates in Chennai. Call +91 86829 46765.",
 };
 
 const features = [
-  'Free initial consultation',
-  'Response within 24 hours',
-  'Confidential communication',
-  'No obligation to proceed',
+  "Response within 24 hours",
+  "Confidential communication",
+  "No obligation to proceed",
 ];
 
 export default function ContactPage() {
@@ -29,7 +28,7 @@ export default function ContactPage() {
     <>
       <PageHeader
         title="Contact Us"
-        subtitle="Have a legal question? We're here to help. Reach out for a free initial consultation with our experienced advocates."
+        subtitle="Have a legal question? We're here to help. Reach out our experienced advocates. From Civil,Criminal,Property,MCOP,Family Law, we fight for your rights."
       />
 
       <section className="section-padding bg-white">
@@ -43,8 +42,8 @@ export default function ContactPage() {
                 </h2>
                 <p className="text-neutral-600 mb-8">
                   Whether you need immediate legal assistance or want to discuss
-                  your case, our team is ready to help. Contact us through any of
-                  the following methods.
+                  your case, our team is ready to help. Contact us through any
+                  of the following methods.
                 </p>
 
                 {/* Contact Details */}
@@ -57,7 +56,9 @@ export default function ContactPage() {
                       <Phone className="w-6 h-6 text-accent-600 group-hover:text-white transition-colors" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-primary-900">Call Us</h3>
+                      <h3 className="font-semibold text-primary-900">
+                        Call Us
+                      </h3>
                       <p className="text-accent-600 font-medium">
                         {siteConfig.contact.phoneDisplay}
                       </p>
@@ -75,7 +76,9 @@ export default function ContactPage() {
                       <Mail className="w-6 h-6 text-accent-600 group-hover:text-white transition-colors" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-primary-900">Email Us</h3>
+                      <h3 className="font-semibold text-primary-900">
+                        Email Us
+                      </h3>
                       <p className="text-accent-600 font-medium">
                         {siteConfig.contact.email}
                       </p>
@@ -96,8 +99,8 @@ export default function ContactPage() {
                       <p className="text-neutral-600">
                         {siteConfig.contact.address.line1},<br />
                         {siteConfig.contact.address.line2},<br />
-                        {siteConfig.contact.address.city},{' '}
-                        {siteConfig.contact.address.state} -{' '}
+                        {siteConfig.contact.address.city},{" "}
+                        {siteConfig.contact.address.state} -{" "}
                         {siteConfig.contact.address.pincode}
                       </p>
                     </div>
@@ -135,7 +138,9 @@ export default function ContactPage() {
                     {features.map((feature) => (
                       <li key={feature} className="flex items-center gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-                        <span className="text-sm text-neutral-600">{feature}</span>
+                        <span className="text-sm text-neutral-600">
+                          {feature}
+                        </span>
                       </li>
                     ))}
                   </ul>
@@ -147,11 +152,11 @@ export default function ContactPage() {
             <div className="lg:col-span-2">
               <div className="bg-neutral-50 rounded-2xl p-8 md:p-10">
                 <h2 className="text-2xl font-heading font-bold text-primary-900 mb-2">
-                  Book a Free Consultation
+                  Book a Consultation
                 </h2>
                 <p className="text-neutral-600 mb-8">
-                  Fill out the form below and one of our advocates will get back to
-                  you within 24 hours to discuss your case.
+                  Fill out the form below and one of our advocates will get back
+                  to you within 24 hours to discuss your case.
                 </p>
 
                 <ContactForm />
@@ -172,7 +177,7 @@ export default function ContactPage() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           className="grayscale hover:grayscale-0 transition-all duration-500"
-          title="Sharma & Associates Office Location"
+          title="SKS Law Associates Office Location"
         />
         {/* Overlay Card */}
         <div className="absolute top-8 left-8 bg-white rounded-xl shadow-xl p-6 max-w-sm hidden md:block">
@@ -180,12 +185,11 @@ export default function ContactPage() {
             {siteConfig.siteName}
           </h3>
           <p className="text-sm text-neutral-600 mb-4">
-            {siteConfig.contact.address.line1}, {siteConfig.contact.address.city}
+            {siteConfig.contact.address.line1},{" "}
+            {siteConfig.contact.address.city}
           </p>
           <a
-            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-              `${siteConfig.contact.address.line1}, ${siteConfig.contact.address.city}`
-            )}`}
+            href="https://www.google.com/maps/dir/?api=1&destination=12.973011009914634,80.14038999375651"
             target="_blank"
             rel="noopener noreferrer"
             className="text-accent-600 text-sm font-medium hover:underline"
@@ -217,4 +221,3 @@ export default function ContactPage() {
     </>
   );
 }
-

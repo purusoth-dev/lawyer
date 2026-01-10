@@ -185,38 +185,6 @@ export default function CasesPage() {
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="section-padding bg-primary-900">
-        <div className="container-custom">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl md:text-5xl font-heading font-bold text-accent-400 mb-2">
-                2000+
-              </div>
-              <div className="text-neutral-300">Cases Handled</div>
-            </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-heading font-bold text-accent-400 mb-2">
-                95%
-              </div>
-              <div className="text-neutral-300">Success Rate</div>
-            </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-heading font-bold text-accent-400 mb-2">
-                ₹500Cr+
-              </div>
-              <div className="text-neutral-300">Value of Cases</div>
-            </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-heading font-bold text-accent-400 mb-2">
-                All India
-              </div>
-              <div className="text-neutral-300">Court Coverage</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="section-padding bg-white">
         <div className="container-custom text-center">

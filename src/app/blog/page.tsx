@@ -110,7 +110,7 @@ export default function BlogPage() {
     <>
       <PageHeader
         title="Legal Insights"
-        subtitle="Stay informed with our latest articles on legal developments, practical advice, and important updates from the Indian legal system."
+        subtitle="Stay informed with our latest articles on legal developments, practical advice, and important updates from the legal system."
       />
 
       {/* Categories */}

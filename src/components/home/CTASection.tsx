@@ -20,20 +20,12 @@ export default function CTASection() {
 
       <div className="container-custom relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-accent-500/20 border border-accent-500/30 rounded-full px-4 py-2 mb-8">
-            <span className="text-accent-400 text-sm font-medium">
-              No Win, No Fee Available for Select Cases
-            </span>
-          </div>
-
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6">
-            Get a Free Legal Consultation Today
+            Get Legal Consultation Today
           </h2>
           <p className="text-lg md:text-xl text-neutral-300 mb-10 max-w-2xl mx-auto">
             Don&apos;t face legal challenges alone. Our experienced advocates are
-            ready to listen to your case and provide expert guidance. The first
-            consultation is absolutely free.
+            ready to listen to your case and provide expert guidance. Contact us today to discuss your case.
           </p>
 
           {/* Info Cards */}
@@ -68,7 +60,7 @@ export default function CTASection() {
               href="/contact"
               className="btn-primary text-lg px-8 py-4 group"
             >
-              Book Free Consultation
+              Book Consultation
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Link>
             <a

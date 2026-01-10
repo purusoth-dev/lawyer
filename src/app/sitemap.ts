@@ -4,7 +4,7 @@ import { getAllBlogSlugs } from '@/lib/blog';
 type ChangeFrequency = 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://sharmaassociates.in';
+  const baseUrl = 'https://skslawassociates.in';
 
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [

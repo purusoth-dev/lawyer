@@ -3,7 +3,7 @@ import PageHeader from '@/components/ui/PageHeader';
 
 export const metadata: Metadata = {
   title: 'Terms of Service',
-  description: 'Terms of Service for Sharma & Associates website and legal services.',
+  description: 'Terms of Service for SKS Law Associates website and legal services.',
 };
 
 export default function TermsPage() {
@@ -23,7 +23,7 @@ export default function TermsPage() {
 
             <h2>1. Acceptance of Terms</h2>
             <p>
-              By accessing and using the Sharma & Associates website, you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our website.
+              By accessing and using the SKS Law Associates website, you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our website.
             </p>
 
             <h2>2. Legal Information Disclaimer</h2>
@@ -52,7 +52,7 @@ export default function TermsPage() {
 
             <h2>6. Intellectual Property</h2>
             <p>
-              All content on this website, including text, graphics, logos, and images, is the property of Sharma & Associates and is protected by copyright laws. You may not reproduce, distribute, or create derivative works without our written permission.
+              All content on this website, including text, graphics, logos, and images, is the property of SKS Law Associates and is protected by copyright laws. You may not reproduce, distribute, or create derivative works without our written permission.
             </p>
 
             <h2>7. Third-Party Links</h2>
@@ -62,7 +62,7 @@ export default function TermsPage() {
 
             <h2>8. Limitation of Liability</h2>
             <p>
-              To the fullest extent permitted by law, Sharma & Associates shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of this website.
+              To the fullest extent permitted by law, SKS Law Associates shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of this website.
             </p>
 
             <h2>9. Governing Law</h2>
@@ -80,9 +80,9 @@ export default function TermsPage() {
               For questions about these Terms of Service, please contact us at:
             </p>
             <p>
-              <strong>Sharma & Associates</strong><br />
-              Email: contact@sharmaassociates.in<br />
-              Phone: +91 98765 43210
+              <strong>SKS Law Associates</strong><br />
+              Email: sk.saravanan@yahoo.com<br />
+              Phone: +91 86829 46765
             </p>
           </div>
         </div>

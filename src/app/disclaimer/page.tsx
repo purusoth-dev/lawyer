@@ -3,7 +3,7 @@ import PageHeader from '@/components/ui/PageHeader';
 
 export const metadata: Metadata = {
   title: 'Disclaimer',
-  description: 'Legal disclaimer for Sharma & Associates website - Important information about our legal services.',
+  description: 'Legal disclaimer for SKS Law Associates website - Important information about our legal services.',
 };
 
 export default function DisclaimerPage() {
@@ -36,17 +36,17 @@ export default function DisclaimerPage() {
 
             <h2>3. No Attorney-Client Relationship</h2>
             <p>
-              Viewing this website or contacting Sharma & Associates through this website does not create an attorney-client relationship. An attorney-client relationship can only be created through a formal written agreement between you and our firm.
+              Viewing this website or contacting SKS Law Associates through this website does not create an attorney-client relationship. An attorney-client relationship can only be created through a formal written agreement between you and our firm.
             </p>
 
             <h2>4. Confidentiality</h2>
             <p>
-              Information sent to Sharma & Associates via email or through the website&apos;s contact form is not secure and is done on a non-confidential basis. Do not send confidential or sensitive information until an attorney-client relationship has been established.
+              Information sent to SKS Law Associates via email or through the website&apos;s contact form is not secure and is done on a non-confidential basis. Do not send confidential or sensitive information until an attorney-client relationship has been established.
             </p>
 
             <h2>5. Bar Council of India Rules</h2>
             <p>
-              This website strictly adheres to the Bar Council of India Rules. The content of this website is not intended to constitute solicitation or advertisement. The website is for information purposes only and is intended to provide general information about Sharma & Associates and its practice areas.
+              This website strictly adheres to the Bar Council of India Rules. The content of this website is not intended to constitute solicitation or advertisement. The website is for information purposes only and is intended to provide general information about SKS Law Associates and its practice areas.
             </p>
 
             <h2>6. Prior Case Results</h2>
@@ -61,22 +61,22 @@ export default function DisclaimerPage() {
 
             <h2>8. External Links</h2>
             <p>
-              Links to external websites are provided for convenience and informational purposes only. Sharma & Associates does not endorse the content of any linked websites and is not responsible for the accuracy or content of external sites.
+              Links to external websites are provided for convenience and informational purposes only. SKS Law Associates does not endorse the content of any linked websites and is not responsible for the accuracy or content of external sites.
             </p>
 
             <h2>9. Use at Your Own Risk</h2>
             <p>
-              Your use of this website is at your own risk. Sharma & Associates is not responsible for any damages or losses arising from your use of or inability to use this website.
+              Your use of this website is at your own risk. SKS Law Associates is not responsible for any damages or losses arising from your use of or inability to use this website.
             </p>
 
             <h2>10. Jurisdiction</h2>
             <p>
-              Sharma & Associates is licensed to practice law in India. The information on this website is intended for residents of India only and should not be construed as legal advice for any other jurisdiction.
+              SKS Law Associates is licensed to practice law in India. The information on this website is intended for residents of India only and should not be construed as legal advice for any other jurisdiction.
             </p>
 
             <h2>Contact</h2>
             <p>
-              If you have any questions regarding this disclaimer, please contact us at contact@sharmaassociates.in.
+              If you have any questions regarding this disclaimer, please contact us at sk.saravanan@yahoo.com.
             </p>
           </div>
         </div>

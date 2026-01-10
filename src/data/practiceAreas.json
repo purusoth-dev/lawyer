@@ -1,6 +1,19 @@
 {
   "practiceAreas": [
     {
+      "id": "civil-law",
+      "title": "Civil Law",
+      "titleTamil": "சிவில் சட்டம்",
+      "description": "Comprehensive civil litigation services including property disputes, contract matters, recovery suits, and injunctions.",
+      "icon": "Gavel",
+      "features": [
+        "Civil Suits",
+        "Injunctions",
+        "Recovery Cases",
+        "Contract Disputes"
+      ]
+    },
+    {
       "id": "criminal-law",
       "title": "Criminal Law",
       "titleTamil": "குற்றவியல் சட்டம்",
@@ -40,9 +53,9 @@
       ]
     },
     {
-      "id": "property-real-estate",
-      "title": "Property & Real Estate",
-      "titleTamil": "சொத்து மற்றும் ரியல் எஸ்டேட்",
+      "id": "property-law",
+      "title": "Property Law",
+      "titleTamil": "சொத்து சட்டம்",
       "description": "Complete property law services from title verification to dispute resolution and registration assistance.",
       "icon": "Building",
       "features": [
@@ -53,16 +66,29 @@
       ]
     },
     {
-      "id": "corporate-business",
-      "title": "Corporate & Business Law",
-      "titleTamil": "கார்ப்பரேட் மற்றும் வணிகச் சட்டம்",
-      "description": "Strategic legal counsel for businesses including company formation, contracts, and regulatory compliance.",
-      "icon": "Briefcase",
+      "id": "cheque-bounce",
+      "title": "Cheque Bounce",
+      "titleTamil": "காசோலை மோசடி",
+      "description": "Specialized practice in negotiable instruments cases including Section 138 proceedings and recovery.",
+      "icon": "CreditCard",
       "features": [
-        "Company Formation",
-        "Contract Drafting",
-        "Mergers & Acquisitions",
-        "Compliance Advisory"
+        "Section 138 Cases",
+        "Legal Notices",
+        "Criminal Prosecution",
+        "Recovery Proceedings"
+      ]
+    },
+    {
+      "id": "consumer-law",
+      "title": "Consumer Law",
+      "titleTamil": "நுகர்வோர் சட்டம்",
+      "description": "Advocacy for consumer rights including product liability, service deficiency, and unfair trade practices.",
+      "icon": "ShieldCheck",
+      "features": [
+        "Consumer Complaints",
+        "Product Liability",
+        "Service Deficiency",
+        "Unfair Trade Practices"
       ]
     },
     {
@@ -77,59 +103,6 @@
         "Wrongful Termination",
         "PF/ESI Matters"
       ]
-    },
-    {
-      "id": "consumer-protection",
-      "title": "Consumer Protection",
-      "titleTamil": "நுகர்வோர் பாதுகாப்பு",
-      "description": "Advocacy for consumer rights including product liability, service deficiency, and unfair trade practices.",
-      "icon": "ShieldCheck",
-      "features": [
-        "Consumer Complaints",
-        "Product Liability",
-        "Service Deficiency",
-        "Unfair Trade Practices"
-      ]
-    },
-    {
-      "id": "cheque-bounce",
-      "title": "Cheque Bounce / NI Act",
-      "titleTamil": "காசோலை மோசடி",
-      "description": "Specialized practice in negotiable instruments cases including Section 138 proceedings and recovery.",
-      "icon": "CreditCard",
-      "features": [
-        "Section 138 Cases",
-        "Legal Notices",
-        "Criminal Prosecution",
-        "Recovery Proceedings"
-      ]
-    },
-    {
-      "id": "cyber-crime",
-      "title": "Cyber Crime",
-      "titleTamil": "சைபர் குற்றம்",
-      "description": "Modern legal solutions for digital offenses, online fraud, data breaches, and IT Act violations.",
-      "icon": "Monitor",
-      "features": [
-        "Online Fraud",
-        "Data Breaches",
-        "Identity Theft",
-        "IT Act Cases"
-      ]
-    },
-    {
-      "id": "gst-taxation",
-      "title": "GST & Taxation",
-      "titleTamil": "ஜிஎஸ்டி மற்றும் வரிவிதிப்பு",
-      "description": "Expert tax advisory and litigation support for GST, income tax, and other statutory compliance matters.",
-      "icon": "Calculator",
-      "features": [
-        "GST Compliance",
-        "Tax Appeals",
-        "Assessment Disputes",
-        "Tax Planning"
-      ]
     }
   ]
 }
-

@@ -11,9 +11,7 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/practice', label: 'Practice Areas' },
-  { href: '/lawyers', label: 'Our Lawyers' },
-  { href: '/cases', label: 'Case Studies' },
-  { href: '/blog', label: 'Blog' },
+  // { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact' },
 ];
 
@@ -81,7 +79,7 @@ export default function Navbar() {
               </div>
               <div>
                 <h1 className="font-heading text-xl font-bold text-primary-900">
-                  Sharma & Associates
+                  SKS Law Associates
                 </h1>
                 <p className="text-xs text-neutral-500 hidden sm:block">
                   Advocates & Legal Consultants
@@ -110,7 +108,7 @@ export default function Navbar() {
             {/* CTA Button */}
             <div className="hidden lg:flex items-center gap-4">
               <Link href="/contact" className="btn-primary">
-                Free Consultation
+                Book Consultation
               </Link>
             </div>
 
@@ -152,7 +150,7 @@ export default function Navbar() {
               ))}
               <div className="pt-4 px-4">
                 <Link href="/contact" className="btn-primary w-full text-center">
-                  Free Consultation
+                  Book Consultation
                 </Link>
               </div>
               <div className="pt-4 px-4 space-y-2 text-sm text-neutral-600">

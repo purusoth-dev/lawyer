@@ -1,24 +1,6 @@
 import Link from 'next/link';
-import { ArrowRight, Scale, Award, Users } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import siteConfig from '@/data/siteConfig.json';
-
-const features = [
-  {
-    icon: Scale,
-    title: 'Expert Legal Counsel',
-    description: 'Comprehensive legal solutions tailored to your specific needs.',
-  },
-  {
-    icon: Award,
-    title: 'Award-Winning Team',
-    description: 'Recognized for excellence in legal practice across Tamil Nadu.',
-  },
-  {
-    icon: Users,
-    title: 'Client-First Approach',
-    description: 'Your success is our priority, with transparent communication.',
-  },
-];
 
 export default function AboutPreview() {
   return (
@@ -74,33 +56,14 @@ export default function AboutPreview() {
           <div>
             <div className="gold-line mb-6" />
             <h2 className="section-title mb-6">
-              Chennai&apos;s Most Trusted Legal Partner
+              Chennai&apos;s Trusted Legal Partner
             </h2>
             <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
-              Since 1999, Sharma & Associates has been at the forefront of legal
-              excellence in Tamil Nadu. Our firm combines deep legal expertise with
+              Since 2020, SKS Law Associates has been at the forefront of legal
+              excellence in Chennai. Our firm combines deep legal expertise with
               a genuine commitment to client success. We handle cases across all
-              courts—from District Courts to the Supreme Court of India.
+              courts—from Magistrate Courts to the High Court.
             </p>
-
-            {/* Features */}
-            <div className="space-y-6 mb-10">
-              {features.map((feature) => (
-                <div key={feature.title} className="flex gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-accent-50 flex items-center justify-center flex-shrink-0">
-                    <feature.icon className="w-6 h-6 text-accent-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-primary-900 mb-1">
-                      {feature.title}
-                    </h3>
-                    <p className="text-neutral-600 text-sm">
-                      {feature.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
 
             <Link
               href="/about"
@@ -115,4 +78,3 @@ export default function AboutPreview() {
     </section>
   );
 }
-

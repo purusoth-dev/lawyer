@@ -3,6 +3,7 @@ import { Playfair_Display, Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import DisclaimerPopup from '@/components/ui/DisclaimerPopup';
 import siteConfig from '@/data/siteConfig.json';
 
 const playfair = Playfair_Display({
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     'divorce lawyer Chennai',
     'property lawyer',
     'corporate lawyer',
-    'legal services India',
+    'legal services Tamil Nadu',
     'best lawyer Tamil Nadu',
     'வழக்கறிஞர் சென்னை',
   ],
@@ -96,6 +97,7 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body className="min-h-screen flex flex-col bg-white">
+        <DisclaimerPopup />
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />

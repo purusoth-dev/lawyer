@@ -5,9 +5,6 @@ import {
   Mail,
   MapPin,
   Clock,
-  Facebook,
-  Twitter,
-  Linkedin,
   ArrowRight,
 } from 'lucide-react';
 import siteConfig from '@/data/siteConfig.json';
@@ -17,9 +14,7 @@ const quickLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About Us' },
   { href: '/practice', label: 'Practice Areas' },
-  { href: '/lawyers', label: 'Our Team' },
-  { href: '/cases', label: 'Case Studies' },
-  { href: '/blog', label: 'Legal Blog' },
+  // { href: '/blog', label: 'Legal Blog' },
   { href: '/contact', label: 'Contact Us' },
 ];
 
@@ -43,40 +38,11 @@ export default function Footer() {
                 </h3>
               </div>
             </div>
-            <p className="text-neutral-300 text-sm leading-relaxed mb-6">
+            <p className="text-neutral-300 text-sm leading-relaxed">
               {siteConfig.tagline}. With over {siteConfig.stats.yearsExperience}{' '}
-              years of experience, we provide comprehensive legal services across
-              Tamil Nadu and India.
+              years of experience, we provide comprehensive legal services in
+              Chennai.
             </p>
-            <div className="flex gap-4">
-              <a
-                href={siteConfig.social.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary-800 flex items-center justify-center hover:bg-accent-600 transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a
-                href={siteConfig.social.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary-800 flex items-center justify-center hover:bg-accent-600 transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a
-                href={siteConfig.social.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary-800 flex items-center justify-center hover:bg-accent-600 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}

@@ -14,6 +14,7 @@ import {
   IndianRupee,
   MapPin,
   Clock,
+  Gavel,
   LucideIcon,
 } from 'lucide-react';
 
@@ -33,6 +34,7 @@ const iconMap: Record<string, LucideIcon> = {
   IndianRupee,
   MapPin,
   Clock,
+  Gavel,
 };
 
 interface IconProps {

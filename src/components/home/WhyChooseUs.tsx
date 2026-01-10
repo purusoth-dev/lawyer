@@ -5,9 +5,6 @@ import siteConfig from '@/data/siteConfig.json';
 
 const stats = [
   { value: siteConfig.stats.yearsExperience, label: 'Years Experience' },
-  { value: siteConfig.stats.casesWon, label: 'Cases Won' },
-  { value: siteConfig.stats.happyClients, label: 'Happy Clients' },
-  { value: siteConfig.stats.successRate, label: 'Success Rate' },
 ];
 
 export default function WhyChooseUs() {

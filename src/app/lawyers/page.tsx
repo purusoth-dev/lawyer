@@ -14,7 +14,7 @@ import lawyersData from '@/data/lawyers.json';
 export const metadata: Metadata = {
   title: 'Our Lawyers',
   description:
-    'Meet our team of experienced advocates at Sharma & Associates. Senior lawyers with expertise in Criminal Law, Family Law, Corporate Law, and more.',
+    'Meet our team of experienced advocates at SKS Law Associates. Senior lawyers with expertise in Criminal Law, Family Law, Corporate Law, and more.',
 };
 
 export default function LawyersPage() {
@@ -164,7 +164,7 @@ export default function LawyersPage() {
           </h2>
           <p className="text-neutral-600 text-lg mb-8 max-w-2xl mx-auto">
             We&apos;re always looking for talented legal professionals who share our
-            passion for justice. If you&apos;re interested in joining Sharma & Associates,
+            passion for justice. If you&apos;re interested in joining SKS Law Associates,
             we&apos;d love to hear from you.
           </p>
           <a

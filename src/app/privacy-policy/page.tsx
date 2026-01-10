@@ -3,7 +3,7 @@ import PageHeader from '@/components/ui/PageHeader';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'Privacy Policy for Sharma & Associates - Learn how we collect, use, and protect your personal information.',
+  description: 'Privacy Policy for SKS Law Associates - Learn how we collect, use, and protect your personal information.',
 };
 
 export default function PrivacyPolicyPage() {
@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
 
             <h2>1. Introduction</h2>
             <p>
-              Sharma & Associates (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) respects your privacy and is committed to protecting your personal data. This privacy policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our legal services.
+              SKS Law Associates (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) respects your privacy and is committed to protecting your personal data. This privacy policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our legal services.
             </p>
 
             <h2>2. Information We Collect</h2>
@@ -106,11 +106,11 @@ export default function PrivacyPolicyPage() {
               If you have questions about this privacy policy, please contact us at:
             </p>
             <p>
-              <strong>Sharma & Associates</strong><br />
+              <strong>SKS Law Associates</strong><br />
               123, Anna Salai, Opposite High Court<br />
               Chennai, Tamil Nadu - 600002<br />
-              Email: contact@sharmaassociates.in<br />
-              Phone: +91 98765 43210
+              Email: sk.saravanan@yahoo.com<br />
+              Phone: +91 86829 46765
             </p>
           </div>
         </div>

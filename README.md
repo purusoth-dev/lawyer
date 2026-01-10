@@ -1,6 +1,6 @@
-# Sharma & Associates - Law Firm Website
+# SKS Law Associates - Law Firm Website
 
-A production-ready Next.js 14 website for Sharma & Associates, a leading law firm in Chennai, India.
+A production-ready Next.js 14 website for SKS Law Associates, a leading law firm in Chennai, India.
 
 ## 🚀 Features
 
@@ -64,8 +64,8 @@ src/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-repo/sharma-associates.git
-cd sharma-associates
+git clone https://github.com/your-repo/sks-law-associates.git
+cd sks-law-associates
 ```
 
 2. Install dependencies:
@@ -97,11 +97,11 @@ SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
 SMTP_USER=your-email@gmail.com
 SMTP_PASSWORD=your-app-specific-password
-SMTP_FROM=noreply@sharmaassociates.in
-CONTACT_EMAIL=contact@sharmaassociates.in
+SMTP_FROM=noreply@skslawassociates.in
+CONTACT_EMAIL=contact@skslawassociates.in
 
 # Site URL
-NEXT_PUBLIC_SITE_URL=https://sharmaassociates.in
+NEXT_PUBLIC_SITE_URL=https://skslawassociates.in
 
 # Google Analytics (optional)
 NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
@@ -260,7 +260,7 @@ Modify in `src/app/layout.tsx`.
 
 ## 📄 License
 
-This project is private and proprietary to Sharma & Associates.
+This project is private and proprietary to SKS Law Associates.
 
 ## 🤝 Support
 

@@ -1,5 +1,5 @@
-import { Metadata } from 'next';
-import Link from 'next/link';
+import { Metadata } from "next";
+import Link from "next/link";
 import {
   Scale,
   Target,
@@ -9,67 +9,85 @@ import {
   Users,
   ArrowRight,
   CheckCircle,
-} from 'lucide-react';
-import PageHeader from '@/components/ui/PageHeader';
-import SectionHeader from '@/components/ui/SectionHeader';
-import StatsCounter from '@/components/ui/StatsCounter';
-import siteConfig from '@/data/siteConfig.json';
+} from "lucide-react";
+import PageHeader from "@/components/ui/PageHeader";
+import SectionHeader from "@/components/ui/SectionHeader";
+import StatsCounter from "@/components/ui/StatsCounter";
+import siteConfig from "@/data/siteConfig.json";
 
 export const metadata: Metadata = {
-  title: 'About Us',
+  title: "About Us",
   description:
-    'Learn about Sharma & Associates, Chennai\'s trusted law firm with 25+ years of experience. Meet our team of expert advocates dedicated to your legal success.',
+    "Learn about SKS Law Associates, Chennai's trusted law firm with 5 years of experience. Meet our team of expert advocates dedicated to your legal success.",
 };
 
 const values = [
   {
     icon: Target,
-    title: 'Excellence',
+    title: "Excellence",
     description:
-      'We strive for excellence in every case, ensuring the best possible outcomes for our clients.',
+      "We strive for excellence in every case, ensuring the best possible outcomes for our clients.",
   },
   {
     icon: Heart,
-    title: 'Integrity',
+    title: "Integrity",
     description:
-      'Honesty and ethical practice are the cornerstones of our legal services.',
+      "Honesty and ethical practice are the cornerstones of our legal services.",
   },
   {
     icon: Eye,
-    title: 'Transparency',
+    title: "Transparency",
     description:
-      'We maintain open communication and keep clients informed at every stage.',
+      "We maintain open communication and keep clients informed at every stage.",
   },
   {
     icon: Users,
-    title: 'Compassion',
+    title: "Compassion",
     description:
-      'We understand legal challenges are stressful and approach each case with empathy.',
+      "We understand legal challenges are stressful and approach each case with empathy.",
   },
 ];
 
 const milestones = [
-  { year: '1999', title: 'Firm Established', description: 'Founded by Mr. R. Sharma in Chennai' },
-  { year: '2005', title: 'High Court Practice', description: 'Expanded to Madras High Court representation' },
-  { year: '2010', title: '1000+ Cases', description: 'Crossed milestone of 1000 successful cases' },
-  { year: '2015', title: 'Corporate Division', description: 'Launched dedicated corporate law practice' },
-  { year: '2020', title: 'Digital Transformation', description: 'Adopted technology for better client service' },
-  { year: '2024', title: 'Pan-India Presence', description: 'Expanded services across all major Indian courts' },
+  {
+    year: "2020",
+    title: "Firm Established",
+    description: "SKS Law Associates founded in Chennai",
+  },
+  {
+    year: "2021",
+    title: "Growing Practice",
+    description: "Expanded services across multiple legal areas",
+  },
+  {
+    year: "2022",
+    title: "100+ Cases",
+    description: "Crossed milestone of 100 successful cases",
+  },
+  {
+    year: "2023",
+    title: "High Court Practice",
+    description: "Expanded to Madras High Court representation",
+  },
+  {
+    year: "2024",
+    title: "500+ Cases",
+    description: "Crossed milestone of 500 successful cases",
+  },
+  {
+    year: "2025",
+    title: "Continued Growth",
+    description: "Expanding services and client base in Chennai",
+  },
 ];
 
 const stats = [
-  { value: siteConfig.stats.yearsExperience, label: 'Years Experience' },
-  { value: siteConfig.stats.casesWon, label: 'Cases Won' },
-  { value: siteConfig.stats.happyClients, label: 'Happy Clients' },
-  { value: siteConfig.stats.successRate, label: 'Success Rate' },
+  { value: siteConfig.stats.yearsExperience, label: "Years Experience" },
 ];
 
 const affiliations = [
-  'Bar Council of Tamil Nadu',
-  'Madras High Court Advocates Association',
-  'Supreme Court Bar Association',
-  'Indian Council of Arbitration',
-  'Chennai Chamber of Commerce (Legal Panel)',
+  "Bar Council of Tamil Nadu",
+  "Tambaram Bar Association",
 ];
 
 export default function AboutPage() {
@@ -77,7 +95,7 @@ export default function AboutPage() {
     <>
       <PageHeader
         title="About Our Firm"
-        subtitle="Over 25 years of dedicated legal service, fighting for justice across Tamil Nadu and India."
+        subtitle="Over 5 years of dedicated legal service, fighting for justice across Chennai and Tamil Nadu."
       />
 
       {/* About Content */}
@@ -89,8 +107,8 @@ export default function AboutPage() {
               <div
                 className="h-[500px] rounded-2xl bg-cover bg-center"
                 style={{
-                  backgroundImage: 'url(/images/about-firm.jpg)',
-                  backgroundColor: '#1a365d',
+                  backgroundImage: "url(/images/about-firm.jpg)",
+                  backgroundColor: "#1a365d",
                 }}
               />
               {/* Decorative Elements */}
@@ -105,7 +123,7 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <div className="text-2xl font-heading font-bold text-primary-900">
-                      Since 1999
+                      Since 2020
                     </div>
                     <div className="text-neutral-500">Serving Justice</div>
                   </div>
@@ -117,36 +135,20 @@ export default function AboutPage() {
             <div>
               <div className="gold-line mb-6" />
               <h2 className="section-title mb-6">
-                A Legacy of Legal Excellence
+                Legal Excellence in Chennai
               </h2>
               <div className="space-y-4 text-neutral-600 leading-relaxed">
                 <p>
-                  <strong className="text-primary-900">Sharma & Associates</strong> was
-                  founded in 1999 by Mr. R. Sharma with a vision to provide accessible,
-                  high-quality legal services to the people of Tamil Nadu. What began as
-                  a small practice has grown into one of Chennai&apos;s most respected
-                  law firms.
-                </p>
-                <p>
-                  Over the past 25 years, we have successfully represented clients in
-                  over 2,000 cases across District Courts, High Courts, and the Supreme
-                  Court of India. Our areas of practice span criminal law, family
-                  disputes, property matters, corporate affairs, and more.
-                </p>
-                <p>
-                  Our team combines seasoned expertise with youthful energy. We believe
-                  in thorough preparation, aggressive advocacy when needed, and always
-                  putting our clients&apos; interests first. Our track record speaks for
-                  itself—a 95% success rate that reflects our commitment to excellence.
+                  Since 2020, <strong className="text-primary-900">SKS Law Associates</strong> has been at the forefront of legal excellence in Chennai. Our firm combines deep legal expertise with a genuine commitment to client success. We handle cases across all courts—from Magistrate Courts to the High Court.
                 </p>
               </div>
 
               <div className="mt-8 space-y-3">
                 {[
-                  'Enrolled with Bar Council since 1999',
-                  'Practice in all courts across India',
-                  'Bilingual services (English & Tamil)',
-                  'Emergency legal support available',
+                  "Enrolled with Bar Council since 2020",
+                  "Practice in Magistrate Courts to High Court",
+                  "Bilingual services (English & Tamil)",
+                  "Dedicated legal support available",
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-accent-500 flex-shrink-0" />
@@ -164,7 +166,7 @@ export default function AboutPage() {
         <div className="container-custom">
           <SectionHeader
             title="Our Core Values"
-            subtitle="The principles that guide everything we do at Sharma & Associates."
+            subtitle="The principles that guide everything we do at SKS Law Associates."
           />
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -198,7 +200,7 @@ export default function AboutPage() {
         <div className="container-custom">
           <SectionHeader
             title="Our Journey"
-            subtitle="Key milestones in our 25+ years of legal practice."
+            subtitle="Key milestones in our 5 years of legal practice."
           />
 
           <div className="relative">
@@ -210,13 +212,13 @@ export default function AboutPage() {
                 <div
                   key={milestone.year}
                   className={`lg:flex items-center ${
-                    index % 2 === 0 ? '' : 'lg:flex-row-reverse'
+                    index % 2 === 0 ? "" : "lg:flex-row-reverse"
                   }`}
                 >
                   <div className="lg:w-1/2 lg:px-12">
                     <div
                       className={`bg-neutral-50 rounded-xl p-6 ${
-                        index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'
+                        index % 2 === 0 ? "lg:text-right" : "lg:text-left"
                       }`}
                     >
                       <span className="text-accent-600 font-heading font-bold text-2xl">
@@ -259,7 +261,9 @@ export default function AboutPage() {
                 className="bg-white rounded-lg px-6 py-4 shadow-md flex items-center gap-3"
               >
                 <Award className="w-5 h-5 text-accent-500" />
-                <span className="font-medium text-primary-900">{affiliation}</span>
+                <span className="font-medium text-primary-900">
+                  {affiliation}
+                </span>
               </div>
             ))}
           </div>
@@ -273,11 +277,11 @@ export default function AboutPage() {
             Ready to Discuss Your Case?
           </h2>
           <p className="text-neutral-300 text-lg mb-8 max-w-2xl mx-auto">
-            Our experienced advocates are here to help. Schedule a free consultation
-            to discuss your legal needs.
+            Our experienced advocates are here to help. Schedule a
+            consultation to discuss your legal needs.
           </p>
           <Link href="/contact" className="btn-primary text-lg px-8 py-4 group">
-            Book Free Consultation
+            Book Consultation
             <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
@@ -285,4 +289,3 @@ export default function AboutPage() {
     </>
   );
 }
-

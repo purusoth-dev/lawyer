@@ -89,7 +89,7 @@ Interim bail is temporary bail granted for a short period, usually until the reg
 
 ## Our Role in Bail Matters
 
-At Sharma & Associates, we have successfully secured bail in hundreds of cases. Our approach includes:
+At SKS Law Associates, we have successfully secured bail in hundreds of cases. Our approach includes:
 
 - Immediate response to arrest situations
 - Thorough preparation of bail applications
@@ -453,7 +453,7 @@ export default function BlogPostPage({ params }: Props) {
                   Our experts are ready to assist you with your legal matters.
                 </p>
                 <Link href="/contact" className="btn-primary w-full text-center">
-                  Free Consultation
+                  Book Consultation
                 </Link>
               </div>
 

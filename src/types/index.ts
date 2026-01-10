@@ -92,16 +92,8 @@ export interface SiteConfig {
     sunday: string;
   };
   languages: string[];
-  social: {
-    linkedin: string;
-    twitter: string;
-    facebook: string;
-  };
   stats: {
     yearsExperience: string;
-    casesWon: string;
-    happyClients: string;
-    successRate: string;
   };
   whyChooseUs: {
     title: string;

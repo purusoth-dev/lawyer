@@ -1,12 +1,8 @@
-import Link from 'next/link';
-import { Phone, ArrowRight, CheckCircle } from 'lucide-react';
-import siteConfig from '@/data/siteConfig.json';
+import Link from "next/link";
+import { Phone, ArrowRight, CheckCircle } from "lucide-react";
+import siteConfig from "@/data/siteConfig.json";
 
-const highlights = [
-  '25+ Years of Legal Excellence',
-  'Free Initial Consultation',
-  '95% Success Rate',
-];
+const highlights = ["5 Years of Legal Excellence"];
 
 export default function Hero() {
   return (
@@ -15,7 +11,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url(/images/hero-bg.jpg)',
+          backgroundImage: "url(/images/hero-bg.jpg)",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-primary-950 via-primary-950/95 to-primary-950/80" />
@@ -51,24 +47,17 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="animate-fade-up">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-accent-500/20 border border-accent-500/30 rounded-full px-4 py-2 mb-8">
-              <span className="w-2 h-2 bg-accent-400 rounded-full animate-pulse" />
-              <span className="text-accent-400 text-sm font-medium">
-                Trusted by 5000+ Clients Across India
-              </span>
-            </div>
-
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold text-white leading-tight mb-6">
               Trusted Legal
-              <span className="block text-gradient">Expertise Across</span>
-              <span className="block">India</span>
+              <span className="block text-gradient">Expertise in</span>
+              <span className="block">Chennai</span>
             </h1>
 
             <p className="text-lg md:text-xl text-neutral-300 mb-8 max-w-xl leading-relaxed">
-              Sharma & Associates delivers exceptional legal representation with
-              over 25 years of experience. From criminal defense to corporate law,
-              we fight for your rights.
+              SKS Law Associates delivers exceptional legal representation with
+              over 5 years of experience. We are expert in
+              civil,criminal,property,mcop,Family Law, we fight for your rights.
+              We are always ready to help you.
             </p>
 
             {/* Highlights */}
@@ -90,7 +79,7 @@ export default function Hero() {
                 href="/contact"
                 className="btn-primary text-lg px-8 py-4 group"
               >
-                Book Free Consultation
+                Book Consultation
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
               <a
@@ -108,30 +97,12 @@ export default function Hero() {
             <div className="relative">
               {/* Floating Card */}
               <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="text-center p-6 bg-white/10 rounded-xl">
-                    <div className="text-4xl font-heading font-bold text-accent-400 mb-2">
+                <div className="flex justify-center">
+                  <div className="text-center p-8 bg-white/10 rounded-xl">
+                    <div className="text-5xl font-heading font-bold text-accent-400 mb-2">
                       {siteConfig.stats.yearsExperience}
                     </div>
-                    <div className="text-neutral-300">Years Experience</div>
-                  </div>
-                  <div className="text-center p-6 bg-white/10 rounded-xl">
-                    <div className="text-4xl font-heading font-bold text-accent-400 mb-2">
-                      {siteConfig.stats.casesWon}
-                    </div>
-                    <div className="text-neutral-300">Cases Won</div>
-                  </div>
-                  <div className="text-center p-6 bg-white/10 rounded-xl">
-                    <div className="text-4xl font-heading font-bold text-accent-400 mb-2">
-                      {siteConfig.stats.happyClients}
-                    </div>
-                    <div className="text-neutral-300">Happy Clients</div>
-                  </div>
-                  <div className="text-center p-6 bg-white/10 rounded-xl">
-                    <div className="text-4xl font-heading font-bold text-accent-400 mb-2">
-                      {siteConfig.stats.successRate}
-                    </div>
-                    <div className="text-neutral-300">Success Rate</div>
+                    <div className="text-neutral-300 text-lg">Years Experience</div>
                   </div>
                 </div>
 
@@ -149,4 +120,3 @@ export default function Hero() {
     </section>
   );
 }
-
