@@ -6,9 +6,19 @@ import Icon from '@/components/ui/Icon';
 import practiceAreasData from '@/data/practiceAreas.json';
 
 export const metadata: Metadata = {
-  title: 'Practice Areas',
+  title: 'Practice Areas | Legal Services in Chennai',
   description:
-    'Explore our comprehensive legal services including Criminal Law, Family Law, Corporate Law, Property Disputes, GST & Taxation, and more. Expert advocates in Chennai.',
+    'SKS Law Associates offers expert legal services in Chennai - Civil Law, Criminal Law, Family Law, Divorce, Property Disputes, Cheque Bounce, Consumer Protection & Labour Law. Call +91 86829 46765.',
+  keywords: [
+    'civil lawyer Chennai',
+    'criminal lawyer Chennai',
+    'family lawyer Chennai',
+    'divorce lawyer Chennai',
+    'property lawyer Chennai',
+    'cheque bounce lawyer Chennai',
+    'consumer court lawyer Chennai',
+    'labour lawyer Chennai',
+  ],
 };
 
 export default function PracticePage() {

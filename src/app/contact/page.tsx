@@ -12,9 +12,16 @@ import ContactForm from "@/components/contact/ContactForm";
 import siteConfig from "@/data/siteConfig.json";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
+  title: "Contact Us | Book Legal Consultation in Chennai",
   description:
-    "Get in touch with SKS Law Associates for legal consultation. Book a consultation with our experienced advocates in Chennai. Call +91 86829 46765.",
+    "Contact SKS Law Associates for expert legal consultation in Chennai. Located at Pammal, Chennai. Call +91 86829 46765 or email sk.saravanan@yahoo.com. Open Mon-Sat 10AM-10PM.",
+  keywords: [
+    'lawyer contact Chennai',
+    'legal consultation Chennai',
+    'advocate near Pammal',
+    'lawyer Tambaram',
+    'book lawyer appointment Chennai',
+  ],
 };
 
 const features = [

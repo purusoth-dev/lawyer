@@ -16,9 +16,16 @@ import StatsCounter from "@/components/ui/StatsCounter";
 import siteConfig from "@/data/siteConfig.json";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "About Us | SKS Law Associates Chennai",
   description:
-    "Learn about SKS Law Associates, Chennai's trusted law firm with 5 years of experience. Meet our team of expert advocates dedicated to your legal success.",
+    "SKS Law Associates is a trusted law firm in Chennai, Tamil Nadu established in 2020. Our experienced advocates handle cases from Magistrate Courts to High Court. Located in Pammal, Chennai.",
+  keywords: [
+    'about SKS Law Associates',
+    'law firm Chennai',
+    'advocate Chennai',
+    'lawyer Pammal Chennai',
+    'legal firm Tamil Nadu',
+  ],
 };
 
 const values = [
